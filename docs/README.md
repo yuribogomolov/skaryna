@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+## Welcome to Project Skaryna
 
-You can use the [editor on GitHub](https://github.com/yuribogomolov/skaryna/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Here I'm going to experiment with new features of Apache Spark, and document all results/outcomes. I picked GitHub format for two simple reasons:
+1. Keep history of code changes, and provide reproducible examples
+2. Provide an easy way to reuse created utility functions.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Spark SQL extensions
 
-### Markdown
+This section is focused on Spark SQL extensions. A more powerful version of this feature was relised in Spark 2.2, but I couldn't find any documentation that cover the details, and provide examples. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yuribogomolov/skaryna/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Let's take a look at the Spark SQL architecture:
+![DataFrames in Spark](https://databricks.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-23-at-3.59.28-PM-1024x236.png)
