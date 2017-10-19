@@ -15,4 +15,12 @@ Spark SQL has two interfaces:
 1. DataFrame API
 2. SQL queries
 
-and both of them are transformed into a logical plan.
+and both of them are transformed into a logical plan. Let's list the main phases:
+1. Logical plan analyzis
+2. Logical plan optimization
+3. Conversion into a Physical Plan (SparkPlan) 
+4. Conversion into RDD operations
+
+Spark extensions allow to customize all major phases: 
+![Spark SQL extensions](https://user-images.githubusercontent.com/11829125/31751528-d3b9ff4a-b453-11e7-9d9e-29754bbfc45a.png)
+
