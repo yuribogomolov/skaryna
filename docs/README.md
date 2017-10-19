@@ -6,7 +6,13 @@ Here I'm going to experiment with new features of Apache Spark, and document all
 
 ## Spark SQL extensions
 
-This section is focused on Spark SQL extensions. A more powerful version of this feature was relised in Spark 2.2, but I couldn't find any documentation that cover the details, and provide examples. 
+This section is focused on Spark SQL extensions. A more powerful version of this feature was released in Spark 2.2, but I couldn't find any documentation that cover the details, and provide examples. 
 
-Let's take a look at the Spark SQL architecture:
-![DataFrames in Spark](https://databricks.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-23-at-3.59.28-PM-1024x236.png)
+Let's take a look at the Catalyst architecture:
+![DataFrames in Spark](https://user-images.githubusercontent.com/11829125/31749950-f79cc2fc-b44a-11e7-8102-598ee7f90eb5.png)
+
+Spark SQL has two interfaces:
+1. DataFrame API
+2. SQL queries
+
+and both of them are transformed into a logical plan.
